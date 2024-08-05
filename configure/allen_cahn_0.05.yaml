@@ -1,0 +1,24 @@
+pde:
+  epsilon: 0.05
+
+dataset:
+  data_path: 'home/Data/FNO/gt_phase_128_{}.pt'
+  n_train: 1000
+  n_test: 10000
+  batch_size: 64
+  test_batch_sizes: 64
+  positional_encoding: true
+  data_augmentation: false
+
+model:
+  n_modes_height: 32
+  n_modes_width: 32
+  hidden_channels: 64
+  out_channels: 1
+  projection_channels: 128
+  norm: 'group_norm'
+  skip: 'linear'
+  use_mlp: true
+  factorization: 'Tucker'
+  rank: 1
+  save_path: 'FNO/model_saved/model_allen_cahn_128_{}.pth'
