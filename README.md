@@ -5,24 +5,29 @@ This project explores the application of Inverse Evolution for data augmentation
 
 ## Data Download
 
-To get started, you need to download the dataset. You can find the dataset at the following link:
+To get started, download the dataset from the following link:
 
-- [Download Dataset](https://example.com/dataset-link)
+- [Download Dataset](https://connectpolyu-my.sharepoint.com/:f:/g/personal/19099128r_connect_polyu_hk/EvmxMlaEw5FIp_qnCnvWanUBW_0CejtzSYcCQXxb8YuROg?e=ns3gSO)
 
-Ensure that you place the downloaded dataset in the appropriate directory and revise the data path in configuration files.
+Ensure that you place the downloaded dataset in the appropriate directory.
 
 ## How to Run the Code
 
 ### Prerequisites
 
-Install neccessary packages:
+Install the necessary packages via the following command:
   ```
   pip install -r requirements.txt
   ```
 
 ### Train the neural operator
-
- Change the "data_augmentation" in configure file to train the neural operator with or without data augmentation and then run:
-   ```
+1. Navigate to the ie-data-augmentation directory:
+```
+   cd /ie-data-augmentation
+```
+2. The configuration files are located in the "configure" directory. You can adjust the parameters by modifying the values in these files. By default, the settings are for benchmarks without data augmentation. To use     
+   data augmentation, set "data_augmentation" to "true". Make sure to update the data path and model save path in the configuration files as needed.
+3. To train the neural operator for a specific PDE, run the corresponding script. For example, to train the neural operator for the Allen-Cahn equation, use the following command:
+```
    python train_allen_cahn.py
-  ```
+```
