@@ -1,7 +1,7 @@
 # Inverse Evolution Data Augmentation
 
 ## Description
-This project explores the application of Inverse Evolution for data augmentation in neural operators. It includes implementations of inverse evolution data augmentation for Burgers' equation, Allen-Cahn equation and Navier-Stokes equation.
+This project explores the application of Inverse Evolution for data augmentation in neural operators. It includes implementations of inverse evolution data augmentation on Fourier Neural Operator (FNO) for Burgers' equation, Allen-Cahn equation and Navier-Stokes equation.
 
 ## Data Download
 
